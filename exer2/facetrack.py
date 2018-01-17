@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import cv2
 
 
@@ -36,5 +37,5 @@ if __name__ == "__main__":
     cascPath = 'haarcascade_frontalface_default.xml'
     faceCascade = cv2.CascadeClassifier(cascPath)
 
-    print('to stop capture make the video window the foreground window and press any key ')
+    print('to stop capture make the video window the foreground window and press q')
     find_faces(faceCascade)

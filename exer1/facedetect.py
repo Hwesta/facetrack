@@ -82,7 +82,7 @@ if __name__ == "__main__":
     faceCascade = getCasc()
     output_path = '.out'.join(os.path.splitext(imagePath))
 
-    find_faces(image, faceCascade, output_path)
+    find_faces(image, faceCascade, output_path, resize=False)
 
     # max_x, max_y = 800, 800
     # yscale = min([max_y/image.shape[0], 1.0])
